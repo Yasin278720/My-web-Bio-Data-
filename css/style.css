@@ -1,0 +1,497 @@
+p,
+span {
+  font-family: "Acme", sans-serif;
+}
+.landing {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/port.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(23, 32, 42, 0.7);
+  background-blend-mode: overlay;
+  position: relative;
+  transition: 0.5s;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+.landing:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  background: #2e2828;
+  transform-origin: right;
+  transform: skewY(5deg);
+}
+.landing:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  right: -50%;
+  background: #2e2828;
+  transform-origin: left;
+  transform: skewY(-5deg);
+}
+@media only screen and (max-width: 600px) {
+  .landing {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.landing-text {
+  position: absolute;
+  color: white;
+  top: 40%;
+  right: 15%;
+  transition: 0.5s;
+}
+p.myname {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 0px;
+  border-left: 12px solid red;
+  line-height: 40px;
+  padding-left: 8px;
+}
+p.mytitle {
+  text-transform: uppercase;
+  font-size: 38px;
+  margin-bottom: 0px;
+  margin-top: 16px;
+  border-left: 12px solid red;
+  line-height: 31px;
+  padding-left: 8px;
+}
+/*spy-menu*/
+.spy-menu {
+  position: fixed;
+  top: 38%;
+  left: 20px;
+  z-index: 1;
+  transition: 0.5s;
+}
+.scroll {
+  color: white;
+  text-align: center;
+  background: black;
+  padding: 7px 8px;
+}
+.scroll:hover {
+  color: black;
+  background: white;
+}
+
+.spy {
+  color: black;
+  background: white;
+}
+/*About Me Section*/
+.about-me {
+  background: #2e2828;
+}
+
+.second-space {
+  background: #2e2828;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.second-space:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: white;
+  top: 0%;
+  left: -50%;
+  position: absolute;
+  transform-origin: right;
+  transform: skewY(-5deg);
+}
+.second-space:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: white;
+  top: 0%;
+  right: -50%;
+  position: absolute;
+  transform-origin: left;
+  transform: skewY(5deg);
+}
+.about-head,
+.edu-head {
+  text-align: center;
+}
+.about-head p {
+  margin: 0;
+  font-size: 32px;
+  line-height: 50px;
+  letter-spacing: 1.5px;
+  color: #fff;
+  text-shadow: 1.5px 1.5px 2px #512e5f;
+}
+.line {
+  height: 6px;
+  width: 80px;
+  background: #fff;
+  margin-top: 4px;
+  border-radius: 5px;
+}
+.about-head .about-underline i {
+  color: #fff;
+  padding: 0px 18px;
+}
+.empty-space {
+  height: 40px;
+  width: 100%;
+}
+.first-space {
+  background: #2e2828;
+}
+.about-img {
+  border-right: 3px solid #fff;
+}
+.about-des {
+  border-left: 3px solid #fff;
+}
+.about-img .main-img {
+  height: auto;
+  width: 75%;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 5px 5px #d2b4de;
+  cursor: pointer;
+}
+.about-img .main-img:hover img {
+  filter: grayscale(0);
+  transform: scale(1.15);
+}
+.about-img .main-img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s, filter 1s ease-in-out;
+  filter: grayscale(100%);
+}
+.about-body .about-des p {
+  font-family: "Kurale", serif;
+  font-size: 21px;
+  color: #fff;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-img {
+    border-right: none;
+    border-bottom: 4px solid #512e5f;
+    padding-bottom: 30px;
+  }
+  .about-des {
+    border-left: none;
+    padding-top: 10px;
+  }
+}
+
+/*Education and Skill*/
+
+.edu-line {
+  width: 100%;
+  height: 4px;
+  background: #512e5f;
+}
+.fa-book-reader,
+.laptop {
+  color: #512e5f;
+  margin-right: 6px;
+  margin-top: 8px;
+}
+.edu-skill-head p {
+  font-size: 23px;
+  margin: 0;
+  color: #512e5f;
+  letter-spacing: 2px;
+}
+/*SVC*/
+.scv-icons {
+  height: 40px;
+  width: 40px;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 18%;
+  background: antiquewhite;
+}
+.scv-common p {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 7px;
+  padding-left: 10px;
+}
+.scv-common {
+  border: 2px solid black;
+  padding: 12px 0px;
+  margin: 10px 0px;
+  padding-left: 15px;
+  border-radius: 5px;
+  background: #6fc6fc;
+}
+.inst,
+.result-year {
+  margin-top: 10px;
+}
+
+/* skill bar */
+ .skill-bar {
+  display: grid;
+  margin-left: 20px;
+  height: 600px;
+  width: 500px;
+  background: #fff;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 25px 30px;
+ } 
+
+ .skill-bar .bar {
+  margin: 15px 0;
+ }
+
+ .skill-bar .bar:first-child {
+  margin-top: 0px;
+ }
+
+ .skill-bar .bar .info {
+  margin-bottom: 5px;
+ }
+ .skill-bar .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0;
+  animation: showtext 0.5s 1s linear forwards;
+ }
+ @keyframes showtext {
+  100% { 
+     opacity: 1;
+  }
+
+}
+
+ .skill-bar .bar .progress-line {
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+ 0px 1px rgba(255, 255, 255, 0.8);
+ animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+ }
+
+ .bar .progress-line span {
+  height: 100%;
+  border-radius: 10px;
+  width:80px;
+  background: #6665ee;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+ }
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+  
+ 
+ .progress-line.html span{
+  width: 90%;
+ }
+ .progress-line.css span{
+  width: 75%;
+ }
+ .progress-line.js span {
+  width: 50%;
+ }
+ .progress-line.jq span {
+  width: 30%;
+ }
+ .progress-line.bt span {
+  width: 80%;
+ }
+ .progress-line.nj span{
+  width: 25%;
+ }
+ .progress-line.rj span {
+  width: 35%;
+ }
+ .progress-line.py span {
+  width: 20%;
+ }
+
+ .bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height:0;
+  right: 0;
+  top: -10px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-top-color: #000;
+  opacity: 0;
+  animation: slowtext2 0.5s 1.5s linear forwards;
+ }
+ .bar .progress-line span::after {
+  position: absolute;
+ 
+  right: 0;
+  top: -28px;
+  color: #fff;
+ background: #000;
+ font-size: 12px;
+  font-weight: 500px;
+  padding: 1px 8px ;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showtext2 0.5s 1.5s linear forwards;
+ }
+ @keyframes showtext2 {
+  100% {
+      opacity: 1;
+  }
+
+ }
+
+ .progress-line.html span::after{
+  content: "90%";
+ }
+ .progress-line.css span::after {
+  content: "75%";
+ }
+ .progress-line.js span::after {
+  content: "50%";
+ }
+ .progress-line.jq span::after {
+  content: "30%";
+ }
+ .progress-line.bt span::after {
+  content: "80%";
+ }
+ .progress-line.nj span::after {
+  content: "25%";
+ }
+ .progress-line.rj span::after {
+  content: "35%";
+ }
+ .progress-line.py span::after {
+  content: "20%";
+ }
+
+/* Skill Bar
+.my-skill {
+  margin-top: 10px;
+  margin-bottom: 13.6px;
+}
+.my-skill p {
+  margin: 0;
+  padding-left: 5px;
+}
+.my-skill i {
+  margin-top: 5px;
+}
+.outer-skill-bar {
+  height: 26px;
+  width: 100%;
+  border: 1px solid black;
+}
+.inner-skill-bar {
+  height: 100%;
+  width: 0%;
+  border-right: 0.5px solid rgb(146, 136, 136);
+}
+.percent {
+  height: 26px;
+  width: 52px;
+  border: 1px solid black;
+  margin-left: 5px;
+}
+.percent p {
+  text-align: center;
+  content: "hello";
+}
+.all-skill {
+  border: 2px solid black;
+  margin-top: 10px;
+  padding: 0px 15px;
+  border-radius: 5px;
+  background: #fef9e7;
+}
+
+.html {
+  background: #9b1f11;
+}
+.css {
+  background: #af7ac5;
+}
+.js {
+  background: #5499c7;
+}
+.jq {
+  background: #48c9b0;
+}
+.bt {
+  background: #ef58d8;
+}
+.nj {
+  background: #f4d03f;
+}
+.rj {
+  background: #dc7633;
+}
+.py {
+  background: #52be80;
+} 
+.testdiv {
+  padding: 10px;
+}
+.testdiv2 {
+  height: 200px;
+  width: 100%;
+  background: lime;
+} */
+/*Social Icons*/
+.social-icons a {
+  margin: 5px 10px;
+}
+.social h2 {
+  font-family: "Acme", sans-serif;
+  color: white;
+  text-shadow: 5px 3px 2px black;
+}
+/*scroll-top*/
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: coral;
+  padding: 10px 16px;
+  border: 1px solid crimson;
+  border-radius: 50%;
+}
+.scroll-top:hover {
+  background: coral;
+  color: white;
+  transition: 0.8s;
+  cursor: pointer;
+}
